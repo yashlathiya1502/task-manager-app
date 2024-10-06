@@ -2,7 +2,6 @@ import { toast } from "react-toastify";
 
 export const showSuccessToaster = (message) => {
   toast.success(message, {
-    // position: toast.POSITION.TOP_CENTER,
     style: {
       zIndex: 99999
     }
