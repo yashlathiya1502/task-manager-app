@@ -1,0 +1,10 @@
+const url = `${process.env.REACT_APP_BACKEND_URL}/api`;
+export const LOGIN_URL = `${url}/user/login`;
+export const REGISTER_URL = `${url}/user/register`;
+export const REFRESH_TOKEN_URL = `${url}/user/refresh-token`;
+export const LOGOUT_URL = `${url}/user/logout`;
+export const TODOS_FETCH_DATA_URL = `${url}/tasks`
+export const TODOS_CREATE_URL = `${url}/tasks/create`
+export const TODOS_UPDATE_URL = `${url}/tasks/update`
+export const TODOS_DELETE_URL = `${url}/tasks/delete`
+export const TODOS_STATUS_CHANGE_URL = `${url}/tasks/status`
