@@ -3,7 +3,7 @@ import { showErrorToaster, showSuccessToaster } from "./toasterHelper";
 const handleApiResponse = async (method, showToaster) => {
   try {
     const response = await method;
-    const { data = null, success, message, code,metaData = null } = response.data;
+    const { data = null, success, message,metaData = null } = response.data;
     const result = {
       success,
       message,
@@ -18,7 +18,7 @@ const handleApiResponse = async (method, showToaster) => {
 
     return result;
   } catch (error) {
-    const { statusCode, message } = error?.response?.data || {statusCode:500,message:"Something went wrong"};
+    const { message } = error?.response?.data || {statusCode:500,message:"Something went wrong"};
     const result = {
       success: false,
       message: message || "Something went wrong!",
